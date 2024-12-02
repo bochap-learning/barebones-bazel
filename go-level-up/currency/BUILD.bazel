@@ -1,0 +1,14 @@
+load("@rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "converter",
+    srcs = ["converter.go"],
+    importpath = "github.com/bochap-learning/barebones-bazel/go-level-up/currency",
+    visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "converter_test",
+    srcs = ["converter_test.go"],
+    embed = [":converter"]
+)
