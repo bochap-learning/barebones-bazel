@@ -1,0 +1,7 @@
+module github.com/bochap-learning/barebones-bazel/go-gazelle-basics/client
+
+go 1.22.9
+
+require github.com/bochap-learning/barebones-bazel/go-gazelle-basics/currency v0.0.0
+
+replace github.com/bochap-learning/barebones-bazel/go-gazelle-basics/currency => ../currency
