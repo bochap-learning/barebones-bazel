@@ -13,6 +13,7 @@ The repository are broken into the respective directories:
 
 * **go-basics:** This directory houses a simple Go project with a single `main.go` file that builds a basic "Hello, Bazel!" binary using Bazel.
 * **go-level-up:** This directory contains a Go project showcasing the use of Go modules and testing within a Bazel build environment.
+* **go-gazelle-basics:**  This directory demonstrates how Gazelle simplifies Go project setup within Bazel by automatically generating build files for a basic, dependency-free project.
 
 ## Building and Running
 

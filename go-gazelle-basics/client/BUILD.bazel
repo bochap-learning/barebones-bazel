@@ -1,0 +1,15 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "client_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/bochap-learning/barebones-bazel/go-gazelle-basics/client",
+    visibility = ["//visibility:private"],
+    deps = ["//currency"],
+)
+
+go_binary(
+    name = "client",
+    embed = [":client_lib"],
+    visibility = ["//visibility:public"],
+)
